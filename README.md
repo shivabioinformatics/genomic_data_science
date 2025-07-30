@@ -54,11 +54,7 @@ To work with these files, you'll need:
 
 This project is part of the Johns Hopkins University Data Science curriculum, specifically focusing on genomic data analysis and bioinformatics workflows. The project demonstrates practical application of command-line tools and genomic analysis techniques commonly used in computational biology.
 
-## Getting Started
 
-1. Clone this repository
-2. Navigate to the data directory
-3. Use the genomic data files with your preferred analysis tools
 
 ## License
 
