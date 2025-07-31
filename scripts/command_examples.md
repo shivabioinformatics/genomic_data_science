@@ -8,9 +8,8 @@ This document contains the specific commands used to analyze the Arabidopsis tha
 - `athal_wu_0_A_annot.gtf` - Gene annotations  
 - `athal_wu_0_A.bam.bai` - BAM index file
 
-## SAMtools Commands
+### 1. How many alignments does the set contain? 
 
-### 1. View BAM Header
 ```bash
 samtools view -H athal_wu_0_A.bam | head -20
 ```
