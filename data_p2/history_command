@@ -1,0 +1,279 @@
+    1  ls
+    2  cd home/
+    3  ls
+    4  mkdir software
+    5  ls
+    6  cd software/
+    7  ls
+    8  cd bowtie2-2.2.3/
+    9  ls
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd samtools-1.2/
+   14  ls
+   15  vim Makefile
+   16  vi Makefile
+   17  yum install samtools
+   18  ls
+   19  ls
+   20  ls | grep con
+   21  ls
+   22  vim INSTALL 
+   23  vi INSTALL 
+   24  yum install miniconda3
+   25  ls
+   26  cd ..
+   27  ls
+   28  mkdir miniconda3
+   29  cd miniconda3/
+   30  ls
+   31  yum install wget
+   32  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+   33  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda3/miniconda.sh
+   34  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   35  ls
+   36  bash Miniconda3-latest-Linux-x86_64.sh
+   37  bash Miniconda3-latest-Linux-x86_64.sh
+   38  bash Miniconda3-latest-Linux-x86_64.sh -b -u -p ./
+   39  rm -rf Miniconda3-latest-Linux-x86_64.sh 
+   40  ls
+   41  conda
+   42  cd bin/
+   43  ls
+   44  conda init bash
+   45  ls
+   46  ./conda init bash
+   47  conda
+   48  exit
+   49  ls
+   50  conda install samtools=1.2
+   51  conda install -c bioconda samtools=1.2
+   52  samtools
+   53  conda install -c bioconda bcftools=1.2
+   54  bcftools
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd home/
+   59  ls
+   60  cd software/
+   61  ls
+   62  cd bowtie2-2.2.3/
+   63  ls
+   64  vim MANUAL
+   65  vi MANUAL
+   66  pwd
+   67  vi ~/.bashrc 
+   68  cd ..
+   69  ls
+   70  cd cufflinks-2.2.1.Linux_x86_64/
+   71  ls
+   72  ll
+   73  vim README 
+   74  vi README 
+   75  pwd
+   76  vi README 
+   77  vi ~/.bashrc 
+   78  cd ..
+   79  ls
+   80  cd bedtools2/
+   81  ls
+   82  cd bin/
+   83  ls
+   84  vim README.md
+   85  cd ..
+   86  vim README.md 
+   87  ls
+   88  conda install -c bioconda bedtools2=2.24.0
+   89  conda install -c bioconda bedtools=2.24.0
+   90  ls
+   91  cd ..
+   92  ls
+   93  cd tophat-2.0.14.Linux_x86_64/
+   94  ls
+   95  pwd
+   96  vi ~/.bashrc 
+   97  source ~/.bashrc
+   98  ls
+   99  tophat2
+  100  bowtie2
+  101  bowtie
+  102  yum install perl
+  103  bowtie
+  104  bowtie2
+  105  bowtie2 -h
+  106  bowtie2
+  107  ls
+  108  cufflinks 
+  109  ls
+  110  cd ..
+  111  bedtools 
+  112  ls
+  113  cd ..
+  114  ls
+  115  cd ..
+  116  ls
+  117  cd ..
+  118  exit
+  119  exit
+  120  ls
+  121  -v /Users/labuser3/Downloads/genomic_data_science:/workspace
+  122  cd workspace/
+  123  ls
+  124  cd data_p2/
+  125  ls
+  126  samtools
+  127  samtools --version
+  128  ls
+  129  less wu_0_A_wgs.fastq
+  130  more wu_0_A_wgs.fastq
+  131  grep "@" wu_0_A_wgs.fastq | wc -l
+  132  grep "@" wu_0_A_wgs.fastq 
+  133  ls
+  134  more wu_0_A_wgs.fastq
+  135  grep "@G" wu_0_A_wgs.fastq 
+  136  grep "@G" wu_0_A_wgs.fastq | wc -l
+  137  ls
+  138  more wu_0_A_wgs.fastq
+  139  less wu_0_A_wgs.fastq
+  140  grep -c "@" wu_0_A_wgs.fastq
+  141  grep -c "@" wu_0_A_wgs.fastq | head
+  142  wc -l wu_0_A_wgs.fastq | awk {print $1/4}'
+  143  wc -l wu_0_A_wgs.fastq | awk '{print $1/4}'
+  144  more {print $1/4}'
+  145  more wu_0_A_wgs.fastq
+  146  wc -l wu_0_A_wgs.fastq
+  147  expr 589416/4
+  148  expr 589416 / 4
+  149  more wu_0_A_wgs.fastq
+  150  ls
+  151  more wu_0.v7.fas
+  152  grep ">" wu_0.v7.fas | wc -l
+  153* 
+  154  grep -B ">" wu_0.v7.fas 
+  155  grep ">" wu_0.v7.fas | wc -l
+  156  grep "chr3" wu_0.v7.fas
+  157  grep "chr3" wu_0.v7.fas | more
+  158  grep "chr3" wu_0.v7.fas | head
+  159  ls
+  160  head wu_0.v7.fas
+  161  bowtie2-build
+  162  bowtie2-build wu_0.7.fas 
+  163  ls
+  164  bowtie2-build wu_0.7.fas 
+  165  bowtie2-build wu_0.7.fas .
+  166  ls
+  167  bowtie2-build
+  168  bowtie2-build wu_0.v7.fas wu_0
+  169  ls
+  170  pwd
+  171  ls
+  172  bowtie2 -p -x /workspace/data_p2/wu_0.v7.fas wu_0_A_wgs.fastq -S exome.bt2.bam
+  173  bowtie2 -p -x /workspace/data_p2/wu_0.v7.fas wu_0_A_wgs.fastq -S exome.bt2.sam
+  174  ls
+  175  bowtie2 -p -x /workspace/data_p2/wu_0  wu_0_A_wgs.fastq -S exome.bt2.sam
+  176  bowtie2 -p 4 -x wu_0  wu_0_A_wgs.fastq -S exome.bt2.sam
+  177  bowtie2 -p 4 --local  -x wu_0  wu_0_A_wgs.fastq -S exome.local.bt2.sam
+  178  samtools view exome.bt2.sam 
+  179  samtools view exome.bt2.sam | more
+  180  ls
+  181  samtools view -f4 exome.bt2.sam
+  182  ls
+  183  samtools flagstats @HDVN:1.0SO:unsorted
+  184  samtools flagstats exome.bt2.sam 
+  185  samtools view exome.bt2.sam | wc -l
+  186  samtools view -bT wu_0.v7.fas exome.bt2.sam > exome.bt2.bam
+  187  ls
+  188  more exome.bt2.bam
+  189  samtools view exome.bt2.bam | more
+  190  ls
+  191  samtools view exome.bt2.bam | cut -f7
+  192  samtools view exome.bt2.bam | cut -f7 | grep -c "="
+  193  samtools view exome.bt2.bam | cut -f7 | grep -c "*"
+  194  samtools flagstats exome.bt2.bam
+  195  samtools view -c -F 4 exome.bt2.bam
+  196  ls
+  197  samtools view -bT wu_0.v7.fas exome.local.bt2.sam > exome.local.bt2.bam
+  198  samtools view -c -F 4 exome.local.bt2.bam
+  199  samtools view -c -f4 exome.bt2.sam
+  200  more exome.bt2.sam
+  201  ls
+  202  samtools view exome.bt2.bam | more
+  203  ls
+  204  samtools view exome.bt2.bam \ cut -f5
+  205  samtools view exome.bt2.bam | cut -f5
+  206  samtools view exome.bt2.bam | cut -f6
+  207  samtools view exome.bt2.bam | cut -f6 | grep -c "D"
+  208  samtools view exome.bt2.bam | cut -f6 | grep -c "I"
+  209  ls
+  210  samtools view exome.local.bt2.bam | cut -f6 | grep -c "I"
+  211  samtools view exome.local.bt2.bam | cut -f6 | grep -c "D"
+  212  samtools view exome.bt2.bam | more
+  213  ls
+  214  samtools view exome.local.bt2.bam | cut -f4 | more
+  215  samtools view exome.local.bt2.bam | cut -f3 | more
+  216  samtools view exome.local.bt2.bam | cut -f3 | grep "Chr3"
+  217  samtools view exome.local.bt2.bam | cut -f3 | grep -c "Chr3"
+  218  ls
+  219  samtools index exome.bt2.bam
+  220  samtools flagstats exome.bt2.bam
+  221  samtools flagstats exome.bt2.bam
+  222  samtools flagstats exome.bt2.bam
+  223  samtools flagstat exome.bt2.bam
+  224  ls
+  225  samtools mpileup -f wu_0.v7.fas exome.bt2.bam 
+  226  samtools mpileup -f wu_0.v7.fas exome.bt2.bam > exome.bt2.mpileup
+  227  more exome.bt2.mpileup
+  228  ls
+  229  samtools mpileup -v -u -f wu_0.v7.fas exome.bt2.bam > exome.wu_0.vcf
+  230  more exome.wu_0.vcf
+  231  samtools mpileup -g -f wu_0.v7.fas exome.bt2.bam > exome.wu_0.vcf
+  232  samtools mpileup -g -f wu_0.v7.fas exome.bt2.bam > exome.wu_0.bcf
+  233  samtools mpileup -v -u -f wu_0.v7.fas exome.bt2.bam > exome.wu_0.vcf
+  234  ls
+  235  more exome.wu_0.bcf
+  236  ls
+  237  more exome.wu_0.vcf
+  238  grep -f4 "A" exome.wu_0.bcf
+  239  more exome.wu_0.vcf
+  240  grep -f4 "A" exome.wu_0.vcf
+  241  grep -f4 "A" exome.wu_0.vcf | wc -l
+  242  grep -f5 "A" exome.wu_0.vcf | wc -l
+  243  ls
+  244  more exome.wu_0.vcf
+  245  cut -f4 exome.wu_0.vcf
+  246  cut -f4 exome.wu_0.vcf | grep -c "A"
+  247  more exome.wu_0.vcf
+  248  cut -f9 exome.wu_0.vcf
+  249  more exome.wu_0.vcf
+  250  cut -f8 exome.wu_0.vcf
+  251  cut -f8 exome.wu_0.vcf | cut -d "," -f1
+  252  cut -f8 exome.wu_0.vcf | cut -d ";" -f1
+  253  cut -f8 exome.wu_0.vcf | cut -d ";" -f1 | grep "DP=20;" | wc -l
+  254  cut -f8 exome.wu_0.vcf | cut -d ";" -f1 | grep "DP=20;" 
+  255  cut -f8 exome.wu_0.vcf | cut -d ";" -f1 | grep "DP=20;" | more
+  256  cut -f8 exome.wu_0.vcf | grep "DP=20" | wc -l
+  257  cut -f8 exome.wu_0.vcf | grep "DP=20" | wc -l
+  258  cut -f8 exome.wu_0.vcf | grep "DP=20" | wc -l
+  259  cut -f8 exome.wu_0.vcf | cut -d ";" -f1 | grep "DP=20" | wc -l
+  260  cut -f8 exome.wu_0.vcf | grep "DP=20" | grep -E "(^DP=20;|;DP=20;)" | wc -l
+  261  # Remove the semicolon from grep since cut -d";" -f1 removes trailing semicolons
+  262  cut -f8 exome.wu_0.vcf | cut -d ";" -f1 | grep "^DP=20$" | wc -l
+  263  more ##fileformat=VCFv4.2
+  264  more ##fileformat=VCFv4.2
+  265  ls
+  266  more exome.wu_0.vcf
+  267  ls
+  268  cut -f8 exome.wu_0.vcf
+  269  bcftools view exome.wu_0.vcf
+  270  ls
+  271  bcftools call -v -m -O z -o exome.wu_0.vcf.gz exome.wu_0.bcf
+  272  ls
+  273  zcat exome.wu_0.vcf.gz 
+  274  zcat exome.wu_0.vcf.gz | grep -v "^#" | wc -l
+  275  ls
+  276  samtools sort exome.bt2.bam exome.bt2.sorted 
+  277  history -bT
+  278  history
+  279  history >> history_command
