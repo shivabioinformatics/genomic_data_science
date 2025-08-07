@@ -12,30 +12,49 @@ This repository contains genomic data analysis files and tools for processing Ar
 genomic_data_science/
 ├── README.md
 ├── .gitignore
-├── data/
-│   └── gencommand_proj2_data/
-│       ├── athal_wu_0_A_annot.gtf          # Gene annotations in GTF format
-│       ├── athal_wu_0_A.bam                # Aligned sequencing reads
-│       ├── athal_wu_0_A.bam.bai            # BAM index file
-│       ├── athal_wu_0_A.bed                # BED format file
-│       ├── region_subset.bam               # Subset of BAM file for specific region
-│       ├── region_subset.bam.bai           # Index for region subset
-│       ├── overlaps.bed                    # Overlap analysis results
-│       └── lengths                         # Length analysis data
-├── data_p2/                                # Project 2 data files
-│   ├── wu_0.v7.fas                         # FASTA genome assembly file
-│   ├── wu_0_A_wgs.fastq                    # Whole genome sequencing reads
-│   ├── exome.bt2.sam                       # Exome alignment SAM file
-│   ├── exome.local.bt2.sam                 # Local exome alignment SAM file
-│   ├── wu_0.1.bt2                          # Bowtie2 index files
-│   ├── wu_0.2.bt2
-│   ├── wu_0.3.bt2
-│   ├── wu_0.4.bt2
-│   ├── wu_0.rev.1.bt2
-│   ├── wu_0.rev.2.bt2
-│   └── project2_analysis.md                # Project 2 analysis documentation
-└── scripts/
-    └── command_examples.md                 # Genomic analysis command examples
+├── .DS_Store
+│
+├── Project1_Alignmnet_Annotation/
+│   ├── bash_script.md
+│   ├── .DS_Store
+│   └── data/
+│       ├── athal_wu_0_A_annot.gtf
+│       ├── athal_wu_0_A.bam
+│       ├── athal_wu_0_A.bam.bai
+│       ├── athal_wu_0_A.bed
+│       ├── lengths
+│       ├── overlaps.bed
+│       ├── region_subset.bam
+│       ├── region_subset.bam.bai
+│       └── .DS_Store
+│
+└── Project2_variant_Calling/
+    ├── bash_script.md
+    ├── .gitignore
+    ├── .DS_Store
+    ├── chr.txt
+    ├── exome.bcf
+    ├── exome.bt2.bam
+    ├── exome.bt2.sam
+    ├── exome.bt2.sorted.bam
+    ├── exome.full.mpileup.vcf
+    ├── exome.local.bt2.bam
+    ├── exome.local.bt2.sam
+    ├── full.mpileup.bcf
+    ├── history_command
+    ├── out.final.vcf
+    ├── out.full.mpileup.bcf
+    ├── sample.vcf.gz
+    ├── wu_0.1.bt2
+    ├── wu_0.2.bt2
+    ├── wu_0.3.bt2
+    ├── wu_0.4.bt2
+    ├── wu_0.rev.1.bt2
+    ├── wu_0.rev.2.bt2
+    ├── wu_0.v7.fas.fai
+    └── data/
+        ├── wu_0_A_wgs.fastq
+        └── wu_0.v7.fas
 ```
 
 ## Data Files
