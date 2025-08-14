@@ -101,7 +101,7 @@ This project is designed for analyzing genetic variation in Arabidopsis thaliana
 ### Docker Environment
 To run the analysis in a controlled environment:
 ```bash
-docker run -it --rm -v /Users/labuser3/Downloads/genomic_data_science:/workspace gencommand_image:v1.0.0 /bin/bash
+docker run -it --rm -v <path to image tar file>:/workspace gencommand_image:v1.0.0 /bin/bash
 ```
 
 The main goal is to examine genetic variation patterns in the Wu_0_A strain by analyzing mapped sequencing reads against the assembled genome.
