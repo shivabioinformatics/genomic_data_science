@@ -39,6 +39,10 @@ samtools view athal_wu_0_A.bam | head -10
 ```
 **Purpose**: Examine the first 10 alignment records to understand the data format.
 
+index new bam file
+samtools index chr7_highmapq.bam    
+
+
 ### 6. Get Quality Statistics
 ```bash
 samtools flagstat athal_wu_0_A.bam

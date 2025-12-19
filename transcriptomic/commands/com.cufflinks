@@ -1,0 +1,11 @@
+THDIR=//workspace/rna_seq_Arabidopsis_thaliana/tophat/
+WORKDIR=/workspace/rna_seq_Arabidopsis_thaliana/cufflinks/
+
+mkdir -p $WORKDIR/Day8
+cd $WORKDIR/Day8; cufflinks -L Day8 -p 8 $THDIR/Day8/accepted_hits.bam
+
+
+###for day16######
+
+mkdir -p $WORKDIR/Day16
+cd $WORKDIR/Day16; cufflinks -L Day16 -p 8 $THDIR/Day16/accepted_hits.bam

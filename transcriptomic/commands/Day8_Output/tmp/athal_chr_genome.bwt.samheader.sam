@@ -1,0 +1,3 @@
+@HD	VN:1.0	SO:coordinate
+@SQ	SN:4	LN:500000
+@PG	ID:TopHat	VN:2.0.14	CL:/home/software/tophat-2.0.14.Linux_x86_64/tophat -o Day8_Output /workspace/transcriptomic/data/athal_chr Day8.fastq
